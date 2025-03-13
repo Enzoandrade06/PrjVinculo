@@ -12,5 +12,7 @@ namespace PrjVinculo
         public string Numero { get; set; }
         public string Operadora { get; set; }
 
+        public bool Capinha { get; set; }
+
     }
 }
