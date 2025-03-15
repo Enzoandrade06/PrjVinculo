@@ -1,46 +1,65 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="PrjVinculo.ProdutoPage2"
-             Title="ProdutoPage2"
+             x:Class="PrjVinculo.CelularPage1"
+             Title="CelularPage1"
              BindingContext="{x:Reference Celular}">
     <VerticalStackLayout>
         <Label 
            Text="Marca"
+           FontSize="Small"
            VerticalOptions="Start" 
-           HorizontalOptions="Start" />
+           HorizontalOptions="CenterAndExpand" />
         <Label 
            Text="{Binding Marca}"
            FontSize="Large"
-           VerticalOptions="Start" 
-           HorizontalOptions="End" />
+           VerticalOptions="Start"
+           TextColor="Blue"
+           HorizontalOptions="CenterAndExpand" />
         <Label 
            Text="Número"
-           VerticalOptions="Start" 
-           HorizontalOptions="Start" />
+           VerticalOptions="Start"
+           FontSize="Small"
+           HorizontalOptions="CenterAndExpand" />
         <Label 
            Text="{Binding Numero}"
            VerticalOptions="Start" 
-           FontSize="Micro"
-           HorizontalOptions="End" />
+           TextColor="LightBlue"
+           FontSize="Title"
+           HorizontalOptions="CenterAndExpand" />
         <Label 
             Text="Operadora"
             VerticalOptions="Start" 
-            HorizontalOptions="Start" />
+            FontSize="Small"
+            HorizontalOptions="CenterAndExpand" />
 
         <Label 
            Text="{Binding Operadora}"
            VerticalOptions="Start"
-           FontSize="Medium"
-           HorizontalOptions="End" />
+           TextColor="Purple"
+           FontSize="Title"
+           HorizontalOptions="CenterAndExpand" />
         <Label 
            Text="Capinha"
            VerticalOptions="Start"
-           HorizontalOptions="End" />
+           FontSize="Small"
+           HorizontalOptions="CenterAndExpand" />
         <Label 
            Text="{Binding Capinha}"
            VerticalOptions="Start"
-           FontSize="Medium"
-           HorizontalOptions="End" />
+            TextColor="Red"
+           FontSize="Title"
+           HorizontalOptions="CenterAndExpand" />
+        <Label 
+            Text="IMEI"
+            VerticalOptions="Start"
+            FontSize="Small"
+            HorizontalOptions="CenterAndExpand" />
+        <Label 
+            Text="{Binding Imei}"
+            VerticalOptions="Start"
+            FontSize="Title"
+            HorizontalOptions="CenterAndExpand" />
+
     </VerticalStackLayout>
 </ContentPage>

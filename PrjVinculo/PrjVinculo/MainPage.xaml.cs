@@ -54,9 +54,9 @@
             celular.Marca = "Samsumg";
             celular.Numero = 11912345678;
             celular.Operadora = "Vivo";
-            celular.Capinha = "Sim";
+            celular.Capinha = "Não possui";
             celular.Imei = "354865095206314";
-            Navigation.PushAsync(new ProdutoPage() { BindingContext = celular });
+            Navigation.PushAsync(new CelularPage1() { BindingContext = celular });
         }
 
         private void btnCelular2_Clicked(object sender, EventArgs e)
@@ -65,34 +65,34 @@
 
             celular.Marca = "Motorola";
             celular.Numero = 21987654321;
-            celular.Operadora = "Vivo";
-            celular.Capinha = "Sim";
+            celular.Operadora = "Oi";
+            celular.Capinha = "Possui";
             celular.Imei = "869852032015682";
-            Navigation.PushAsync(new ProdutoPage() { BindingContext = celular });
-        }
-
-        private void btnCelular4_Clicked(object sender, EventArgs e)
-        {
-            Celular celular = new Celular();
-
-            celular.Marca = "Xiaomi";
-            celular.Numero = 31998765432;
-            celular.Operadora = "Vivo";
-            celular.Capinha = "Sim";
-            celular.Imei = "351832074213960";
-            Navigation.PushAsync(new ProdutoPage() { BindingContext = celular });
+            Navigation.PushAsync(new CelularPage2() { BindingContext = celular });
         }
 
         private void btnCelular3_Clicked(object sender, EventArgs e)
         {
             Celular celular = new Celular();
 
+            celular.Marca = "Xiaomi";
+            celular.Numero = 31998765432;
+            celular.Operadora = "Tim";
+            celular.Capinha = "Possui";
+            celular.Imei = "351832074213960";
+            Navigation.PushAsync(new CelularPage3() { BindingContext = celular });
+        }
+
+        private void btnCelular4_Clicked(object sender, EventArgs e)
+        {
+            Celular celular = new Celular();
+
             celular.Marca = "Iphone";
             celular.Numero = 41963257485;
-            celular.Operadora = "Vivo";
-            celular.Capinha = "Sim";
+            celular.Operadora = "Claro";
+            celular.Capinha = "Não";
             celular.Imei = "358198072419509";
-            Navigation.PushAsync(new ProdutoPage() { BindingContext = celular });
+            Navigation.PushAsync(new CelularPage4() { BindingContext = celular });
         }
     }
 
