@@ -9,10 +9,10 @@ namespace PrjVinculo
     internal class Celular
     {
         public string Marca { get; set; }
-        public string Numero { get; set; }
+        public double Numero { get; set; }
         public string Operadora { get; set; }
-
-        public bool Capinha { get; set; }
+        public string Capinha { get; set; }
+        public string Imei { get; set; }
 
     }
 }

@@ -8,14 +8,24 @@
             Padding="30,0"
             Spacing="25">
             <Button
-                Text="Abrir produto"
-                x:Name="btnProduto"
-                Clicked="btnProduto_Clicked"
+                Text="Abrir 1º celular"
+                x:Name="btnCelular1"
+                Clicked="btnCelular1_Clicked"
                 />
             <Button
-                Text="Abrir outro produto"
-                x:Name="btnProduto2"
-                Clicked="btnProduto2_Clicked"
+                Text="Abrir 2º celular"
+                x:Name="btnCelular2"
+                Clicked="btnCelular2_Clicked"
+                />
+            <Button
+                Text="Abrir 3º celular"
+                x:Name="btnCelular3"
+                Clicked="btnCelular3_Clicked"
+                />
+            <Button
+                Text="Abrir 4º celular"
+                x:Name="btnCelular4"
+                Clicked="btnCelular4_Clicked"
                 />
             <Image
                 Source="dotnet_bot.png"
@@ -40,6 +50,16 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+            <Button
+                Text="Abrir produto"
+                 x:Name="btnProduto"
+                Clicked="btnProduto_Clicked"
+                 />
+            <Button
+                 Text="Abrir outro produto"
+                 x:Name="btnProduto2"
+                 Clicked="btnProduto2_Clicked"
+                 />
         </VerticalStackLayout>
     </ScrollView>
 
