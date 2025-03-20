@@ -48,6 +48,9 @@
 	  <MauiXaml Update="CelularPage4.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ListaProdutoPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ProdutoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
