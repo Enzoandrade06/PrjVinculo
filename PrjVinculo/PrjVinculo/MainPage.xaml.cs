@@ -94,6 +94,11 @@
             celular.Imei = "358198072419509";
             Navigation.PushAsync(new CelularPage4() { BindingContext = celular });
         }
+
+        private void btnLista_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new ListaProdutoPage());
+        }
     }
 
 }

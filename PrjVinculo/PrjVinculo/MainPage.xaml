@@ -7,6 +7,11 @@
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
+            <Label 
+                Text="Celulares"
+                FontSize="Small"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"/>
             <Button
                 Text="Abrir 1º celular"
                 x:Name="btnCelular1"
@@ -27,23 +32,11 @@
                 x:Name="btnCelular4"
                 Clicked="btnCelular4_Clicked"
                 />
-            <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
-
-            <Label
-                Text="Olá, Professor!"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
-
-            <Label
-                Text="Bem vindo ao trabalho do Enzo e do Otávio."
-                Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
-
+            <Label 
+                Text="Produto"
+                FontSize="Small"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"/>
             <Button
                 x:Name="CounterBtn"
                 Text="Click me" 
@@ -60,6 +53,16 @@
                  x:Name="btnProduto2"
                  Clicked="btnProduto2_Clicked"
                  />
+            <Label 
+                Text="Lista"
+                FontSize="Small"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"/>
+            <Button
+                Text="Exibir Lista"
+                x:Name="btnLista"
+                Clicked="btnLista_Clicked"/>
+
         </VerticalStackLayout>
     </ScrollView>
 

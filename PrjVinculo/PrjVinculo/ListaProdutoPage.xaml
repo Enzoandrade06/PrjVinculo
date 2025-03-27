@@ -3,12 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PrjVinculo"
              x:Class="PrjVinculo.ListaProdutoPage"
-             Title="ListaProdutoPage">
+             Title="ListaProdutoPage"
+             BindingContext="{x:Reference Produto}"
+            x:DataType="local:Produto">
     <VerticalStackLayout>
         <ListView x:Name="ListaProduto">
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:Produto" >
-                    <ViewCell>
+                    <ViewCell Tapped="ViewCell_Tapped">
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
@@ -18,9 +20,9 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto" />
                             </Grid.ColumnDefinitions>
-                            <Label Text="{Binding Descricao}"/>
-                            <Label Text="{Binding Preco}"/>
-                            <Label Text="{Binding Categoria}"/>
+                            <Label Text="{Binding Categoria }" Grid.Row="2"/>
+                            <Label Text="{Binding Descricao}" Grid.Row="0"/>
+                            <Label Text="{Binding Preco}" Grid.Row="1"/>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>

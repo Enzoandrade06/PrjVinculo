@@ -2,8 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="PrjVinculo.ProdutoPage"
+             xmlns:local="clr-namespace:PrjVinculo"
              Title="ProdutoPage"
-             BindingContext="{x:Reference Produto}">
+             BindingContext="{x:Reference Produto}"
+             x:DataType="local:Produto">
+
     <VerticalStackLayout>
         <Label 
             Text="Descrição"
